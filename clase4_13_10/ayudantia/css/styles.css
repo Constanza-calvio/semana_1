@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 2px dashed black;
+
+}
+
+.chat{
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 2px solid lightblue;
+
+}
+
+.imgcontainer{
+    background-color: red;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+
+}
+
+.imgcontainer>img{
+    height: 100%;
+}
+
+.chathistory {
+    background-color: aqua;
+    height: 100px;
+    width: 48px;
+
+    font-size: x-small;
+
+}
+
+.chathistory>p {
+    font-size: x-small;
+    background-color: blue;
+}
+
+.chathistory>div {
+    height: 16px;
+    width: 16px;
+    font-size: x-small;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: ;
+}
+
+.chatcontent{
+    flex: 1;
+    padding: 0px,8px;
+    box-sizing: border-box;
+}
+
+.chatcontent>h1 {
+    font-size: 0.8rem;
+    color: darkolivegreen;
+}
+
+.chatcontent>p {
+    font-size: 0.8rem;
+    color: darkcyan;
+}

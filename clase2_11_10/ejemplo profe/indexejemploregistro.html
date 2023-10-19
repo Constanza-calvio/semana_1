@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Formulario</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <style>
+      div {
+        margin-bottom: 20px;
+      }
+
+      #mietiqueta {
+        color: blue;
+      }
+    </style>
+
+    <h1>Mi Formulario de Registro</h1>
+
+    <form action="/crearusuario" method="post">
+      <div>
+        <label id="mietiqueta" for="nombre"> Nombre</label>
+        <input type="text" id="nombre"/>
+      </div>
+
+      <div>
+        <label for="apellido"> Apellido</label>
+        <input type="text" id="apellido"/>
+      </div>
+
+      <div>
+        <label for="email"> Email</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div>
+        <label for="psw"> Contraseña</label>
+        <input type="password" id="psw" />
+      </div>
+
+      <div>
+        <label for="cpsw"> Confirma Contraseña</label>
+        <input type="password" id="cpsw" />
+      </div>
+
+      <div>
+        <label for="cumple"> Cumple</label>
+        <input type="date" id="cumple" />
+      </div>
+      
+      <div>
+        <label for="mujer"> Mujer</label>
+        <input type="radio" name="genero" id="mujer"/>
+        <label for="hombre"> Hombre</label>
+        <input type="radio" name="genero" id="hombre"/>
+        <label for="otro">Otro</label>
+        <input type="radio" name="genero" id="otro"/>
+    </div>
+    <!-- <br>
+    <hr> -->
+    <div>
+        <label for="description"> Una breve descripci'on de ti:</label>
+        <br>
+        <textarea name="descripcion" id="description" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <label for="lenguaje">Lenguaje Favorito</label>
+        <select name="favorito" id="lenguaje">
+            <option value="">JavasCRIPT</option>
+            <option value="">Python</option>
+            <option value="">C++</option>
+        </select>
+    </div>
+
+      <button>Registrate</button>
+      <input type="submit" value="Registrate" />
+    </form>
+  </body>
+</html>
